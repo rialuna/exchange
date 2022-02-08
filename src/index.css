@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.header {
+  margin-top: 10px;
+  padding: 10px;
+  box-shadow: 4px 4px 32px 6px rgba(34, 60, 80, 0.2);
+  border-radius: 12px;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.currency-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+
+.currency {
+  white-space: nowrap;
+  margin-right: 15px;
+}
+
+.currency span {
+  font-weight: 700;
+}
+
+.content-title {
+  width: 100%;
+  text-align: center;
+  margin: 30px 0px 30px 0px;
+  font-size: 32px;
+  font-style: italic;
+}
+
+.form-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.form-item {
+  width: 30%;
+}
+
+.exange-result {
+  color: coral;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+@media (max-width: 1100px) {
+  .form-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .form-item {
+    margin-bottom: 20px;
+  }
+  .header-container {
+    flex-wrap: wrap !important;
+    align-items: center;
+    justify-content: center;
+  }
+  .title {
+    width: 100%;
+    text-align: center;
+  }
+  .currency-wrapper {
+    text-align: center;
+  }
+}
